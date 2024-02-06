@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style/style.css" class="css">
-    <title>Document</title>
+    <title>WattElse?</title>
 </head>
 
 <body>
-
-    <header  id="bienvenue">
+    <script>
+        AOS.init();
+    </script>
+    <header id="bienvenue">
         <nav>
             <a href="#bienvenue">
                 <h1 class="logo"><span class="italique">Watt</span>Else?</h1>
             </a>
-            <ul>
-                <li><a href="#bienvenue">Bienvenue</a></li>
-                <li><a href="#article1">Énergie en France</a></li>
-                <li><a href="#article2">Transition Énergétique</a></li>
-                <li><a href="#article3">Nos Solutions</a></li>
+            <ul class="menu">
+                <li class="menu-1"><a href="#bienvenue">Bienvenue</a></li>
+                <li class="menu-2"><a href="#article1">Énergie en France</a></li>
+                <li class="menu-3"><a href="#article2">Transition Énergétique</a></li>
+                <li class="menu-4"><a href="#article3">Nos Solutions</a></li>
             </ul>
         </nav>
 
@@ -33,9 +37,21 @@
             <p class="header-text">Prêt à découvrir les secrets d'une consommation plus intelligente et écologique ?</p>
             <p class="header-text">Joignez-vous à nous dans cette aventure où chaque geste éco-responsable est une
                 graine plantée pour des économies florissantes.</p>
-            <a class="header-btn" href="">Montrez moi <i class="bi bi-house-down-fill"></i></a>
+            <a class="header-btn" href="#article1">Montrez moi <i class="bi bi-house-down-fill"></i></a>
         </div>
     </header>
+
+    <div class="background-container">
+        <div class="layer1"></div>
+        <div class="layer2"></div>
+        <div class="layer3"></div>
+        <div class="layer4"></div>
+        <div class="layer4-2"></div>
+        <div class="eolienne">
+            <div class="layer5"></div>
+            <div class="layer6"></div>
+        </div>
+    </div>
 
     <main>
         <div class="slider-container">
@@ -59,55 +75,67 @@
                 <div class="slider-cards">
 
                 </div>
+
+                <div class="slider-cards">
+
+                </div>
             </div>
         </div>
 
         <article id="article1" class="article1">
-            <h2 class="article1-titre">Énergie en France</h2>
+            <h2 class="article1-titre" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">Énergie en France</h2>
 
             <div class="article1-container">
-                <p class="description-graphique1">Lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
+                <p class="description-graphique1" data-aos="zoom-in-down">Lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
                     ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum.
                     Lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum.
                 </p>
-                <div class="article1-graphique1">
+                <div class="article1-graphique1" data-aos="fade-up"
+                data-aos-anchor-placement="top-center">
 
                 </div>
             </div>
 
-            <div class="article1-graphique2">
+            <div class="article1-graphique2" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
 
             </div>
         </article>
 
         <article id="article2" class="article2">
-            <h2 class="article2-titre">Transition Énergétique</h2>
+            <h2 class="article2-titre" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">Transition Énergétique</h2>
             <div class="article2-container">
                 <div class="article2-container1">
-                    <div class="article2-graphique1">
+                    <div class="article2-graphique1" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear" data-aos-duration="500">
 
                     </div>
-                    <p class="article2-description">
+                    <p class="article2-description" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear" data-aos-duration="500">
                         Lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum.
                     </p>
                 </div>
 
                 <div class="article2-container1">
-                    <div class="article2-graphique2">
+                    <div class="article2-graphique2" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear" data-aos-duration="8000">
 
                     </div>
-                    <p class="article2-description">
+                    <p class="article2-description" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear" data-aos-duration="500">
                         Lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum.
                     </p>
                 </div>
             </div>
-            <div class="article2-chiffre">
+            <div class="article2-chiffre" data-aos="fade-down-left">
                 <i class="bi bi-wind"></i>
                 <h2 class="chiffre">123 Millions de tonnes de CO2</h2>
                 <p class="chiffre-description">Sont rejetées par le bâtiment chaques années.</p>
             </div>
 
-            <div class="article2-chiffre">
+            <div class="article2-chiffre" data-aos="fade-down-right">
                 <i class="bi bi-exclamation-circle-fill"></i>
                 <p class="chiffre-description gras">Cela équivaut à</p>
                 <h2 class="chiffre">30 millions de voitures en fonctionnement continu</h2>
@@ -116,12 +144,15 @@
         </article>
 
         <article id="article3" class="article3">
-            <h2 class="article3-titre">Nos Solutions</h2>
+            <h2 class="article3-titre"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">Nos Solutions</h2>
             <div class="article3-container1">
-                <div class="article3-graphique1">
+                <div class="article3-graphique1" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
 
                 </div>
-                <p class="article3-description">
+                <p class="article3-description" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     Lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum.
                     lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum.
                 </p>
@@ -129,7 +160,8 @@
 
             <div class="article3-container2">
                 <div class="container2-graph2">
-                    <div class="article3-graphique2">
+                    <div class="article3-graphique2" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
 
                     </div>
                     <p>
@@ -138,7 +170,8 @@
                         lorem ipsum.
                     </p>
                 </div>
-                <div class="article3-graphique3">
+                <div class="article3-graphique3" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
 
                 </div>
             </div>
@@ -146,18 +179,24 @@
         </article>
         <div class="article3-chiffre">
             <div>
-                <h2 class="chiffre"><i class="bi bi-lightning"></i> 123 Millions de tonnes de CO2</h2>
-                <p class="chiffre-description">Lorem ipsum lorem ipsum lorem ipsum.</p>
+                <h2 class="chiffre" data-aos="fade-up"
+                data-aos-duration="500"><i class="bi bi-lightning"></i> 123 Millions de tonnes de CO2</h2>
+                <p class="chiffre-description" data-aos="fade-up"
+                data-aos-duration="500">Lorem ipsum lorem ipsum lorem ipsum.</p>
             </div>
 
             <div>
-                <h2 class="chiffre"><i class="bi bi-lightning"></i> 123 Millions de tonnes de CO2</h2>
-                <p class="chiffre-description">Lorem ipsum lorem ipsum lorem ipsum.</p>
+                <h2 class="chiffre" data-aos="fade-up"
+                data-aos-duration="750"><i class="bi bi-lightning"></i> 123 Millions de tonnes de CO2</h2>
+                <p class="chiffre-description" data-aos="fade-up"
+                data-aos-duration="750">Lorem ipsum lorem ipsum lorem ipsum.</p>
             </div>
 
             <div>
-                <h2 class="chiffre"><i class="bi bi-lightning"></i> 123 Millions de tonnes de CO2</h2>
-                <p class="chiffre-description">Lorem ipsum lorem ipsum lorem ipsum.</p>
+                <h2 class="chiffre" data-aos="fade-up"
+                data-aos-duration="1000"><i class="bi bi-lightning"></i> 123 Millions de tonnes de CO2</h2>
+                <p class="chiffre-description" data-aos="fade-up"
+                data-aos-duration="1000">Lorem ipsum lorem ipsum lorem ipsum.</p>
             </div>
         </div>
     </main>
@@ -195,7 +234,50 @@
         </div>
     </footer>
 
+
+
     <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const layer1 = document.querySelector('.layer1');
+    const layer2 = document.querySelector('.layer2');
+    const layer3 = document.querySelector('.layer3');
+    const layer4 = document.querySelector('.layer4');
+    const layer4_2 = document.querySelector('.layer4-2');
+    const layer5 = document.querySelector('.eolienne');
+
+    const factors = {
+        layer1: 0.1,
+        layer2: 0.3,
+        layer3: 0.5,
+        layer4: 0.7,
+        layer4_2: 0.7,
+        layer5: 0.9,
+    };
+
+    window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY;
+
+        layer1.style.transform = `translateY(${scrollY * factors.layer1}px)`;
+        layer2.style.transform = `translateY(${scrollY * factors.layer2}px)`;
+        layer3.style.transform = `translateY(${scrollY * factors.layer3}px)`;
+        layer4.style.transform = `translateY(${scrollY * factors.layer4}px)`;
+        layer4_2.style.transform = `translateY(${scrollY * factors.layer4_2}px)`;
+        layer5.style.transform = `translateY(${scrollY * factors.layer5}px)`;
+        layer6.style.transform = `translateY(${scrollY * factors.layer6}px)`;
+        layer7.style.transform = `translateY(${scrollY * factors.layer7}px)`;
+        layer8.style.transform = `translateY(${scrollY * factors.layer8}px)`;
+    });
+
+    function animate() {
+        requestAnimationFrame(animate);
+        // Vous pouvez ajouter d'autres mises à jour d'animation ici si nécessaire
+    }
+
+    animate();
+});
+
+
         document.addEventListener('DOMContentLoaded', function () {
             let sliderContainer = document.querySelector('.slider-container');
             let slider = document.querySelector('.slider');
