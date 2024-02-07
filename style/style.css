@@ -8,7 +8,7 @@
         margin: 0;
         padding: 0;
         font-family: 'DM Sans', sans-serif;
-        background-color: #E4E4E4;
+        background-color: #ededed;
         color: #232622;
         }
 
@@ -99,13 +99,14 @@
     header {
         position: relative;
         z-index:5000;
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         margin-bottom: 3rem;
+        animation: apparition 1s ease-out;
     }
 
     .header-content {
-        margin-top: 25vh;
+        padding-top: 25vh;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -162,14 +163,16 @@
         position: absolute;
         top: 15rem;
         left: 0;
+        animation: apparition 1s ease-out;
     }
 
     .layer1 {
         z-index: -1;
-        background-image: url('../images/layer1.png');
+        background-image: url('../images/layer1v2.png');
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position-x: center;
+        background-position-y: -160px;
         height: 100%;
         width: 100%;
     }
@@ -179,7 +182,7 @@
         top: 0;
         left: 0;
         z-index: 1;
-        background-image: url('../images/layer2.png');
+        background-image: url('../images/layer2v2.png');
         background-size: 100%;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -193,7 +196,7 @@
         top: 0;
         left: 0;
         z-index: 2;
-        background-image: url('../images/layer3.png');
+        background-image: url('../images/layer3v2.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -230,67 +233,45 @@
     }
 
     .layer5 {
+        margin-top: 25vh;
+        margin-left: -5vw;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
-        background-image: url('../images/layer5.png');
+        background-image: url('../images/layer5v2.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: -200px;
-        height: 100%;
-        width: 100%;
+        background-position: center;
+        width: 35%;
+        height: 35%;
     }
 
     .layer6 {
+        margin-top: 7vh;
+        margin-left: -12.2vw;
         position: absolute;
-        top: 50px;
-        left: -145px;
+        top: 0;
+        left: 0;
         z-index: 5;
-        background-image: url('../images/layer6.png');
+        background-image: url('../images/layer6v2.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 40%;
-        width: 40%;
+        height: 50%;
+        width: 50%;
         animation: eolienne 7s linear infinite;
     }
 
     .eolienne {
         z-index: 1;
         position: absolute;
-        top: 0;
+        top: -40px;
         left: 0;
         width: 100%;
         height: 100%;
     }    
 
-    .layer7 {
-        position: absolute;
-        top: -15px;
-        left: -50px;
-        z-index: 5;
-        background-image: url('../images/layer7.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100%;
-        width: 100%;
-    }
-
-    .layer8 {
-        position: absolute;
-        top: -10px;
-        left: 150px;
-        z-index: 5;
-        background-image: url('../images/layer8.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100%;
-        width: 100%;
-    }
 
     /*Slider*/
     .slider-container {
@@ -539,6 +520,16 @@
     }
 
     /*Keyframes*/
+    @keyframes apparition {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        
+    }
+
     @keyframes flower-rota {
         0% {
             transform: rotate(0deg);
