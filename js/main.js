@@ -296,7 +296,7 @@ const chart1 = new Chart(ctx3, {
     plugins: {
       title: {
         display: true,
-        text: "Graphique",
+        text: "Production énergétique en France",
         font: {
           size: 18,
         },
