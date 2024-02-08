@@ -1087,6 +1087,10 @@ footer {
         height: 60vh;
         background-color: #F4F4F1;
         border-radius: 30px;
+        background-image: url("../images/graphique_maison.png");
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .article2-graphique2 {
@@ -1143,21 +1147,20 @@ footer {
     .article3-container1 {
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
         align-items: flex-end;
         gap: 3rem;
     }
 
     .article3-graphique1 {
         margin-top: 3rem;
-        width: 50%;
-        height: 60vh;
+        width: 100%;
+        height: 40vh;
         background-color: #F4F4F1;
         border-radius: 30px;
     }
 
     .article3-description {
-        width: 50%;
+        width: 100%;
     }
 
     .article3-container2 {

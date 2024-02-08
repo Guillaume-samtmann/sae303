@@ -8,6 +8,18 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style/style.css" class="css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"
+    defer
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/chartjs-plugin-autocolors"
+    defer
+  ></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <script src="./js/data.js" defer></script>
+  <script src="./js/main.js" defer></script>
     <title>WattElse?</title>
 </head>
 
@@ -105,8 +117,8 @@
                     ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum.
                     Lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum.
                 </p>
-                <div class="article1-graphique1" data-aos="fade-up" data-aos-anchor-placement="top-center">
-
+                <div id="chart-container" class="article1-graphique1" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <canvas id="chart1"></canvas>
                 </div>
             </div>
 
@@ -122,7 +134,6 @@
                 <div class="article2-container1">
                     <div class="article2-graphique1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="500">
-
                     </div>
                     <p class="article2-description" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="500">
@@ -133,7 +144,7 @@
                 <div class="article2-container1">
                     <div class="article2-graphique2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="8000">
-
+                        <canvas id="chart"></canvas>
                     </div>
                     <p class="article2-description" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="500">
@@ -159,7 +170,6 @@
             <h2 class="article3-titre" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Nos Solutions</h2>
             <div class="article3-container1">
                 <div class="article3-graphique1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-
                 </div>
                 <p class="article3-description" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     Lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum.
@@ -169,8 +179,8 @@
 
             <div class="article3-container2">
                 <div class="container2-graph2">
-                    <div class="article3-graphique2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-
+                    <div id="chart-container" style="position: relative; margin: auto" class="article3-graphique2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <canvas id="chart2"></canvas>
                     </div>
                     <p>
                         Lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum.
@@ -178,8 +188,8 @@
                         lorem ipsum.
                     </p>
                 </div>
-                <div class="article3-graphique3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-
+                <div id="chart-container" style="position: relative; margin: auto" class="article3-graphique3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <canvas id="chart3"></canvas>
                 </div>
             </div>
             </div>
@@ -306,7 +316,6 @@
             });
         });
     </script>
-    <script src="./js/main.js"></script>
 </body>
 
 </html>
