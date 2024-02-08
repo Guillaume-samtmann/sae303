@@ -162,6 +162,7 @@ button {
         position: absolute;
         width: 80%;
         top: 725%;
+        margin-top: 400px;
     }
 
     .article3-graphique1.aos-init.aos-animate {
@@ -169,6 +170,7 @@ button {
     }
 
     button {
+        margin-top: 380px;
         display: block;
         margin-left: 200px;
         position: absolute;

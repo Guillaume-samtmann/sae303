@@ -28,7 +28,6 @@ function togglemenu() {
 }
 togglemenu();
 
-// Chart.register(ChartDeferred);
 
 const ctx1 = document.getElementById("chart2");
 
@@ -215,15 +214,14 @@ const chart = new Chart(ctx, {
         return delay;
       },
     },
-    responsive: true, // Activer la responsivité
-    maintainAspectRatio: false, // Désactiver le maintien du rapport d'aspect
+    responsive: true,
+    maintainAspectRatio: false,
     scales: {
       x: {
         grid: {
           display: false,
         },
         ticks: {
-          // Ajouter des options pour les étiquettes de l'axe x
           autoSkip: true,
           maxRotation: 0,
           sampleSize: 3,
@@ -233,7 +231,6 @@ const chart = new Chart(ctx, {
         beginAtZero: true,
         max: 50,
         ticks: {
-          // Ajouter des options pour les étiquettes de l'axe y
           callback: function (value) {
             return value + "%";
           },
@@ -243,9 +240,9 @@ const chart = new Chart(ctx, {
     plugins: {
       title: {
         display: true,
-        text: "Energie de chauffage par classe des logements en %",
+        text: "Energie de chauffage par classe des logements en % en 2022",
         font: {
-          size: 16, // Adapter la taille de la police pour les titres
+          size: 16, 
         },
       },
       legend: {
@@ -253,7 +250,7 @@ const chart = new Chart(ctx, {
         position: "bottom",
         labels: {
           font: {
-            size: 12, // Adapter la taille de la police pour la légende
+            size: 12,
           },
         },
       },
@@ -296,15 +293,14 @@ const chart1 = new Chart(ctx3, {
     plugins: {
       title: {
         display: true,
-        text: "Production énergétique en France",
+        text: "Production énergétique en France en 2022",
         font: {
           size: 18,
         },
       },
       legend: {
         display: true,
-        position: "bottom", // 'top', 'bottom', 'left', 'right'
-        // ...
+        position: "bottom",
       },
     },
     animation: {
@@ -312,6 +308,7 @@ const chart1 = new Chart(ctx3, {
       animateScale: true,
       duration: 2000,
       easing: "easeInOutQuart",
+      delay: 3000,
     },
   },
 });

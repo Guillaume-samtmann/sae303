@@ -411,7 +411,7 @@ header {
 /*Slider*/
 .slider-container {
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 180px;
     height: 30vh;
     overflow: hidden;
 }
@@ -750,7 +750,7 @@ video {
 }
 
 .article3-chiffre {
-    margin-top: 17rem;
+    margin-top: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1039,7 +1039,7 @@ footer {
     }
 
     .header-content {
-        padding-top: 25vh;
+        padding-top: 15vh;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -1556,7 +1556,7 @@ footer {
     }
 
     .article3-chiffre {
-        margin-top: 30rem;
+        margin-top: 0rem;
         height: 90vh;
         width: 100%;
         text-align: left;

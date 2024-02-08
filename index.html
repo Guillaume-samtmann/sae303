@@ -9,20 +9,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style/style.css" class="css">
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"
-    defer
-  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js" defer></script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/chartjs-plugin-autocolors"
-    defer
-  ></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/data.js" defer></script>
-  <script src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-autocolors" defer></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/data.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <title>WattElse?</title>
 </head>
 
@@ -43,7 +37,9 @@
             </ul>
         </nav>
         <nav class="navbar-mobile">
-            <div class="navbar__logo"><h1 class="logo"><span class="italique">Watt</span>Else?</h1></div>
+            <div class="navbar__logo">
+                <h1 class="logo"><span class="italique">Watt</span>Else?</h1>
+            </div>
             <ul class="navbar__links">
                 <li class="navbar__link first"><a href="#bienvenue">Bienvenue</a></li>
                 <li class="navbar__link second"><a href="#article1">Énergie en France</a></li>
@@ -58,11 +54,12 @@
 
         <div class="header-content">
             <div class="header-titre">
-                <h1>Semez <span class="italique gras">l'Écologie,</span>
-                    <h1>Récoltez des <span class="italique gras">Économies</span></h1>
+                <h1>Logements<span class="italique gras">Écologiques</span>
+                    <h1>Budget <span class="italique gras">Économique</span></h1>
+                    <h1>Votre Énergie, Vos Économies</h1>
             </div>
             <i class="bi bi-flower3 flower"></i>
-            <p class="header-text">Prêt à découvrir les secrets d'une consommation plus intelligente et écologique ?</p>
+            <p class="header-text">Prêt à découvrir les secrets d'un logement plus intelligent et écologique ?</p>
             <p class="header-text">Joignez-vous à nous dans cette aventure où chaque geste éco-responsable est une
                 graine plantée pour des économies florissantes.</p>
             <a class="header-btn" href="#article1">Montrez moi <i class="bi bi-house-down-fill"></i></a>
@@ -87,7 +84,8 @@
                 <div class="slider-cards">
                     <div class="card-1 cards-content">
                         <i class="bi bi-recycle"></i>
-                        <h2>La transition énergétique est un processus de transformation du système énergétique actuel vers un système plus durable.</h2>
+                        <h2>La transition énergétique est un processus de transformation du système énergétique actuel
+                            vers un système plus durable.</h2>
                     </div>
                 </div>
 
@@ -108,7 +106,8 @@
                 <div class="slider-cards">
                     <div class="card-4 cards-content">
                         <i class="bi bi-cloud-fog2-fill"></i>
-                        <h2>Une énergie verte est une énergie renouvelable qui n’a pas ou peu d’impacts négatifs sur l’environnement.</h2>
+                        <h2>Une énergie verte est une énergie renouvelable qui n’a pas ou peu d’impacts négatifs sur
+                            l’environnement.</h2>
                     </div>
                 </div>
 
@@ -134,21 +133,21 @@
 
             <div class="article1-container">
                 <p class="description-graphique1" data-aos="zoom-in-down">
-                    Ce graphique vous présente le taux de production d'électricité en France métropolitaine pour l'année
-                    2022.
-                    On peut donc apercevoir que la France utilise beaucoup les énergies fossiles comme le nucléaire par
-                    exemple.
-                    Il souligne l'importance d'adopter les énergies renouvelables pour garantir la durabilité des
-                    sources énergétiques.
+                    La France, bien que largement dépendante des énergies fossiles telles que le nucléaire, se tourne
+                    vers un avenir durable en mettant en avant l'importance cruciale des énergies renouvelables pour
+                    garantir la pérennité de nos sources énergétiques.
                 </p>
-                <div id="chart-container" class="article1-graphique1" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div id="chart-container" class="article1-graphique1" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <canvas id="chart1"></canvas>
+                    <p class="gras">Réalisé par Lucas Walther</p>
                 </div>
             </div>
 
-<div class="article1-graphique2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="article1-graphique2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="chart-container">
                     <canvas id="myChart"></canvas>
+                    <p class="gras">Réalisé par Jérémy Deveney</p>
                 </div>
                 <div class="chart-text">
                     <div class="chart-text-p chart-text-container1">
@@ -167,7 +166,7 @@
             </div>
         </article>
         <article id="articleVideo" class="articleVideo">
-            <video controls  src="images/motion.mp4"></video>
+            <video controls src="images/motion.mp4"></video>
         </article>
 
         <article id="article2" class="article2">
@@ -177,26 +176,32 @@
                 <div class="article2-container1">
                     <div class="article2-graphique1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="500">
-                        <h3>Ensembles des résidence principales</h3>
+                        <h3>Moyenne des résidence principales dans la classification du DPE en 2022</h3>
+                        <p class="gras">Réalisé par Lucas Walther</p>
                     </div>
                     <p class="article2-description" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="500">
-                        Ce graphique sur le DPE des logements en France met en lumière l'impact environnemental négatif
-                        des immeubles et des maisons,visant à encourager la rénovation des habitations en soulignant
-                        leurs
-                        aspects néfastes actuels.</p>
+                        7,2 millions de logements sont considérés comme des "passoires énergétiques" en France. Ce
+                        nombre montre que meilleure efficacité énergétique pour ces logements est probablement possible
+                        !
+                        Un bon classement dans le DPE implique un logement moins énergivore et donc moins coûteux
+                        mensuellement.</p>
                 </div>
 
                 <div class="article2-container1">
                     <div class="article2-graphique2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="8000">
                         <canvas id="chart"></canvas>
+                        <p class="gras">Réalisé par Alixe Viverge</p>
                     </div>
                     <p class="article2-description" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                         data-aos-easing="linear" data-aos-duration="500">
-                        Avec 7,2 millions de logements considérés comme des passoires thermiques, le graphique souligne
-                        l'importance de ces améliorations pour une meilleure efficacité énergétique, expliquant que des
-                        logements bien classés dans le DPE sont moins énergivores et donc moins coûteux mensuellement                    </p>
+                        En moyenne, les logements utilisant le fioul pour se chauffer sont en grande partie dans les
+                        catégories du DPE les moins bonnes. De ce fait, les logements utilisant cette technologie sont
+                        actuellement les plus énergivores et les plus coûteux.
+                        Un DPE d’une classe énergétique entre E et G empêchera les propriétaires de louer leur bien à
+                        partir de 2025.
+                    </p>
                 </div>
             </div>
             <div class="article2-chiffre" data-aos="fade-down-right">
@@ -214,10 +219,12 @@
         </article>
 
         <article class="article3">
-            <div class="article3-container1">
+            <h2 id="article3" class="article3-titre" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Nos
+                Solutions</h2>
+<!--             <div class="article3-container1">
                 <div class="article3-graphique1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <p class="info-graph">Pas accesible sur mobile</p>
-            
+ 
                     <script type="module">
                         import define from "./index.js";
                         import { Runtime, Library, Inspector } from "./runtime.js";
@@ -227,37 +234,44 @@
                     
                         // Sélectionnez l'élément avec l'ID "chart-container"
                         
-                    </script>
+                    </script> 
+
                 </div>
                 <p class="article3-description" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
 
                 </p>
-            </div>
-            <h2 id="article3" class="article3-titre" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Nos Solutions</h2>
+            </div> -->
+
 
             <div class="article3-container2">
-                
-                <div   class="container2-graph2">
-                    <div id="chart-container" style="position: relative; margin: auto" class="article3-graphique2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+
+                <div class="container2-graph2">
+                    <div id="chart-container" style="position: relative; margin: auto" class="article3-graphique2"
+                        data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <canvas id="chart2"></canvas>
                     </div>
                     <p>
-                        Ce graphique présente l'impact de l'installation de dispositifs hydro-économes sur la
-                        consommation d'énergie liée à l'eau chaude sanitaire, avec des réductions de 15 à 20%.
-                        Grâce au resultat obtenues nous vous indiquons une économies potentielles de 15 à 20% sur vos
-                        coûts associés à cette consommation.
+                        Optimisez votre consommation d'énergie liée à l'eau chaude en installant un dispositif
+                        hydro-économe sur vos douches.
+                        Cette technologie permet de canaliser le jet d'eau, d'éviter les éclaboussures et de calibrer le
+                        débit. Vous pourriez obtenir des économies d'eau de 15 à 20 % !
                     </p>
+                    <p class="gras">Réalisé par Inacio Rodrigues</p>
                 </div>
-                <div id="chart-container" style="position: relative; margin: auto" class="article3-graphique3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <div id="chart-container" style="position: relative; margin: auto" class="article3-graphique3"
+                    data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <canvas id="chart3"></canvas>
-                    <p>                    
-                        Ce graphique  vous démontre la consommation de gaz naturel et son impact sur les émissions de CO2. En considérant une diminution de 5 à 15% avec l'utilisation d'un programmateur, les résultats montrent une réduction significative des émissions de CO2 associées à la consommation de gaz.
+                    <p class="gras">Réalisé par Guillaume Samtmann</p>
+                    <p>
+                        Qui dit plus d'émissions de CO2 dit plus de gaz consommés. De ce fait,
+                        l'utilisation d'un simple programmateur peut entraîner une diminution significative de 5 à 15 %
+                        des émissions de CO2 et donc une diminution significative de la consommation du logement.
                     </p>
                 </div>
             </div>
             </div>
         </article>
-        
+
         <div class="article3-chiffre">
             <div class="swiper-container">
                 <div class="swiper mySwiper">
@@ -266,67 +280,74 @@
                             <div class="flex column paragraphe-swiper">
                                 <p>1 | 5</p>
                                 <div>
-                                <h4>Je règle mon chauffage à 19°C maximum.</h4>
-                                <p>Baisser le chauffage de 1°C dans son logement, c'est 7% d'économies par an.</p>
+                                    <h4>Je règle mon chauffage à 19°C maximum.</h4>
+                                    <p>Baisser le chauffage de 1°C dans son logement, c'est 7% d'économies par an.</p>
                                 </div>
                             </div>
                             <div class="img">
-                                <img style="" src="images/thermo_maison.png" alt="chauffage">
+                                <img src="images/thermo_maison.png" alt="chauffage">
                             </div>
                         </div>
                         <div class="swiper-slide between">
                             <div class="flex column paragraphe-swiper">
                                 <p>2 | 5</p>
                                 <div>
-                                <h4>Je règle mon chauffe-eau à 55°C et je prends des douches moins longues</h4>
-                                <p>Régler son chauffe-eau à 55°C, c'est 10% d'économies d'énergie par an sur le chauffe-eau.
-                                </p>
+                                    <h4>Je règle mon chauffe-eau à 55°C et je prends des douches moins longues</h4>
+                                    <p>Régler son chauffe-eau à 55°C, c'est 10% d'économies d'énergie par an sur le
+                                        chauffe-eau.
+                                    </p>
                                 </div>
                             </div>
                             <div class="img">
-                            <img src="images/douche.png" alt="chauffe-eau">
+                                <img src="images/douche.png" alt="chauffe-eau">
                             </div>
                         </div>
                         <div class="swiper-slide between">
                             <div class="flex column paragraphe-swiper">
                                 <p>3 | 5</p>
                                 <div>
-                                <h4>J'éteins tous mes appareils en marche ou en veille quand ils ne sont pas utilisés
-                                </h4>
-                                <p>Eteindre tous les appareils en marche ou en veille quand ils ne sont pas utilisés, c'est
-                                    10% d'économies d'électricité.</p>
+                                    <h4>J'éteins tous mes appareils en marche ou en veille quand ils ne sont pas
+                                        utilisés
+                                    </h4>
+                                    <p>Eteindre tous les appareils en marche ou en veille quand ils ne sont pas
+                                        utilisés, c'est
+                                        10% d'économies d'électricité.</p>
                                 </div>
                             </div>
                             <div class="img">
-                            <img src="images/On-Off.png" alt="interrupteur">
+                                <img src="images/On-Off.png" alt="interrupteur">
                             </div>
                         </div>
                         <div class="swiper-slide between">
                             <div class="flex column paragraphe-swiper">
                                 <p>4 | 5</p>
                                 <div>
-                                <h4>Je décale l'utilisation de mes appareils électriques en dehors des heures de pointe
-                                    (8h-13h/18h-20h)</h4>
-                                <p>En programmant mes machines l'après-midi ou la nuit, je les utilise en dehors des heures
-                                    de pointe. Si on le fait tous, on évite la consommation électrique d'une ville comme
-                                    Marseille.</p>
+                                    <h4>Je décale l'utilisation de mes appareils électriques en dehors des heures de
+                                        pointe
+                                        (8h-13h/18h-20h)</h4>
+                                    <p>En programmant mes machines l'après-midi ou la nuit, je les utilise en dehors des
+                                        heures
+                                        de pointe. Si on le fait tous, on évite la consommation électrique d'une ville
+                                        comme
+                                        Marseille.</p>
                                 </div>
                             </div>
                             <div class="img">
-                            <img src="images/machine_laver.png" alt="machine">
+                                <img src="images/machine_laver.png" alt="machine">
                             </div>
                         </div>
                         <div class="swiper-slide between">
                             <div class="flex column paragraphe-swiper">
                                 <p>5 | 5</p>
                                 <div>
-                                <h4>J'installe un thermostat programmable</h4>
-                                <p>Un programmateur de chauffage bien réglé permet de réduire les consommations d'énergie
-                                    jusqu'à 15% par an.</p>
+                                    <h4>J'installe un thermostat programmable</h4>
+                                    <p>Un programmateur de chauffage bien réglé permet de réduire les consommations
+                                        d'énergie
+                                        jusqu'à 15% par an.</p>
                                 </div>
                             </div>
                             <div class="img">
-                            <img src="images/thermostat_reglable.png" alt="thermostat">
+                                <img src="images/thermostat_reglable.png" alt="thermostat">
                             </div>
                         </div>
                     </div>
@@ -351,10 +372,10 @@
             <div class="footer-mobile">
                 <div class="plan">
                     <p>Plan du site</p>
-                    <a href="">Bienvenue</a>
-                    <a href="">Énergie en France</a>
-                    <a href="">Transition Énergétique</a>
-                    <a href="">Nos Solutions</a>
+                    <a href="#bienvenue">Bienvenue</a>
+                    <a href="#article1">Énergie en France</a>
+                    <a href="#article2">Transition Énergétique</a>
+                    <a href="#article3">Nos Solutions</a>
                 </div>
                 <div class="info">
                     <p>Informations</p>
