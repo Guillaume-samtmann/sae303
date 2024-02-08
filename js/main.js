@@ -119,18 +119,17 @@ const ctx2 = document.getElementById("chart3");
 const chart3 = new Chart(ctx2, {
   type: "bar",
   data: {
+    labels: myData2.annees,
     datasets: [
       {
-        data: myData2["chiffres"],
-        backgroundColor: "rgba(75, 192, 192, 0.5)",
-        borderColor: "rgba(75, 192, 192, 1)",
-        borderWidth: 1,
+        data: myData2.chiffres,
+        label: "chiffres",
+        backgroundColor: ["#EB983A", "#FFCD4F", "#5CCB7B"],
       },
     ],
-    labels: myData2["annees"],
   },
   options: {
-    borderRadius: 50,
+    borderRadius: 30,
     maintainAspectRatio: false,
     animation: {
       duration: 3000,
@@ -140,58 +139,70 @@ const chart3 = new Chart(ctx2, {
       y: {
         title: {
           display: true,
-          text: "gCO2e/kWh", // Ajout d'un titre à l'axe y
+          text: "gCO2e/kWh",
         },
       },
     },
-  },
-  plugins: {
-    title: {
-      display: true,
-      text: "Graphique",
-      font: {
-        size: 18,
+    plugins: {
+      title: {
+        display: true,
+        text: "Evolution de la production de CO2",
+        font: {
+          size: 18,
+        },
       },
-    },
-    legend: {
-      display: true,
-      position: "bottom", // 'top', 'bottom', 'left', 'right'
-      // ...
+      legend: {
+        display: false,
+      },
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            var label = context.label || "";
+            if (label) {
+              label += ": ";
+            }
+            label += context.formattedValue + " kWh";
+            return label;
+          },
+        },
+      },
     },
   },
 });
 
 const autocolors = window["chartjs-plugin-autocolors"];
-// Récupération du contexte d'affichage du canvas d'id chart
 const ctx = document.getElementById("chart");
 
-// Création d'un graphique affichant des courbes dans le canvas d'id chart
 let delayed;
 const chart = new Chart(ctx, {
   type: "bar",
-  plugins: [autocolors],
   data: {
     labels: classeLogement,
     datasets: [
       {
         data: data[0].chiffres,
         label: data[0].catégorie,
+        backgroundColor: "#FFCD4F",
       },
       {
         data: data[1].chiffres,
         label: data[1].catégorie,
+        backgroundColor: "#EB983A",
       },
       {
         data: data[2].chiffres,
         label: data[2].catégorie,
+        backgroundColor: "#E34F26",
       },
       {
         data: data[3].chiffres,
         label: data[3].catégorie,
+        backgroundColor: "#5CCB7B",
       },
     ],
   },
   options: {
+    borderRadius: 10,
     animation: {
       onComplete: () => {
         delayed = true;
@@ -204,29 +215,37 @@ const chart = new Chart(ctx, {
         return delay;
       },
     },
-    borderRadius: 10,
-    responsive: true,
-    maintainaspectratio: false,
+    responsive: true, // Activer la responsivité
+    maintainAspectRatio: false, // Désactiver le maintien du rapport d'aspect
     scales: {
       x: {
         grid: {
           display: false,
         },
+        ticks: {
+          // Ajouter des options pour les étiquettes de l'axe x
+          autoSkip: true,
+          maxRotation: 0,
+          sampleSize: 3,
+        },
       },
       y: {
         beginAtZero: true,
         max: 50,
+        ticks: {
+          // Ajouter des options pour les étiquettes de l'axe y
+          callback: function (value) {
+            return value + "%";
+          },
+        },
       },
     },
     plugins: {
-      autocolors: {
-        offset: 39,
-      },
       title: {
         display: true,
         text: "Energie de chauffage par classe des logements en %",
         font: {
-          size: 18,
+          size: 16, // Adapter la taille de la police pour les titres
         },
       },
       legend: {
@@ -234,7 +253,7 @@ const chart = new Chart(ctx, {
         position: "bottom",
         labels: {
           font: {
-            size: 8,
+            size: 12, // Adapter la taille de la police pour la légende
           },
         },
       },
@@ -250,6 +269,15 @@ const chart1 = new Chart(ctx3, {
     datasets: [
       {
         data: data2.proportions,
+        backgroundColor: [
+          "#55637F",
+          "#9DA6D2",
+          "#5CCB7B",
+          "#FFCD4F",
+          "#FFAE58",
+          "#E34F26",
+          "#D2D2D2",
+        ],
       },
     ],
 
@@ -259,11 +287,11 @@ const chart1 = new Chart(ctx3, {
     responsive: true,
     maintainAspectRatio: false,
     /* datasets:{
-            pie: {
-                radius: 180,
-                spacing: 1
-            }
-        }, */
+        pie: {
+            radius: 180,
+            spacing: 1
+        }
+    }, */
 
     plugins: {
       title: {
@@ -276,11 +304,7 @@ const chart1 = new Chart(ctx3, {
       legend: {
         display: true,
         position: "bottom", // 'top', 'bottom', 'left', 'right'
-        labels: {
-          font: {
-            size: 8,
-          },
-        },
+        // ...
       },
     },
     animation: {
