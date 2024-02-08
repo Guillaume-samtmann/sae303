@@ -18,7 +18,8 @@
     defer
   ></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/data.js" defer></script>
   <script src="./js/main.js" defer></script>
     <title>WattElse?</title>
@@ -128,15 +129,15 @@
                     <canvas id="myChart"></canvas>
                 </div>
                 <div class="chart-text">
-                    <div class="chart-text-container1">
+                    <div class="chart-text-p chart-text-container1">
                         <h3 class="chart-pourcent">20.7%</h3>
                         <p>De l'énergie en France était verte en <span class="big-text">2022</span>.</p>
                     </div>
-                    <div class="chart-text-container2">
+                    <div class="chart-text-p chart-text-container2">
                         <h3 class="chart-pourcent">33%</h3>
                         <p>De l'énergie en France sera verte en <span class="big-text">2030</span>.</p>
                     </div>
-                    <div class="chart-text-container3">
+                    <div class="chart-text-p chart-text-container3">
                         <h3 class="chart-pourcent">100%</h3>
                         <p>De l'énergie en France sera verte à <span class="big-text">l'Avenir</span>.</p>
                     </div>
@@ -213,26 +214,63 @@
             </div>
             </div>
         </article>
+        
         <div class="article3-chiffre">
-            <div>
-                <h2 class="chiffre" data-aos="fade-up" data-aos-duration="500"><i class="bi bi-lightning"></i> 123
-                    Millions de tonnes de CO2</h2>
-                <p class="chiffre-description" data-aos="fade-up" data-aos-duration="500">Lorem ipsum lorem ipsum lorem
-                    ipsum.</p>
-            </div>
-
-            <div>
-                <h2 class="chiffre" data-aos="fade-up" data-aos-duration="750"><i class="bi bi-lightning"></i> 123
-                    Millions de tonnes de CO2</h2>
-                <p class="chiffre-description" data-aos="fade-up" data-aos-duration="750">Lorem ipsum lorem ipsum lorem
-                    ipsum.</p>
-            </div>
-
-            <div>
-                <h2 class="chiffre" data-aos="fade-up" data-aos-duration="1000"><i class="bi bi-lightning"></i> 123
-                    Millions de tonnes de CO2</h2>
-                <p class="chiffre-description" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum lorem ipsum lorem
-                    ipsum.</p>
+            <div class="swiper-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex between">
+                            <div class="flex column">
+                                <p>1 | 5</p>
+                                <h4> 1) Je règle mon chauffage à 19°C maximum.</h4>
+                                <p>Baisser le chauffage de 1°C dans son logement, c'est 7% d'économies par an.</p>
+                            </div>
+                            <img src="images/chauffage.png" alt="chauffage">
+                        </div>
+                        <div class="swiper-slide flex between">
+                            <div class="flex column">
+                                <p>2 | 5</p>
+                                <h4> 2) Je règle mon chauffe-eau à 55°C et je prends des douches moins longues</h4>
+                                <p>Régler son chauffe-eau à 55°C, c'est 10% d'économies d'énergie par an sur le chauffe-eau.
+                                </p>
+                            </div>
+                            <img src="images/chauffe-eau.jpg" alt="chauffe-eau">
+                        </div>
+                        <div class="swiper-slide flex between">
+                            <div class="flex column">
+                                <p>3 | 5</p>
+                                <h4> 3) J'éteins tous mes appareils en marche ou en veille quand ils ne sont pas utilisés
+                                </h4>
+                                <p>Eteindre tous les appareils en marche ou en veille quand ils ne sont pas utilisés, c'est
+                                    10% d'économies d'électricité.</p>
+                            </div>
+                            <img src="images/interrupteur.jpg" alt="interrupteur">
+                        </div>
+                        <div class="swiper-slide flex between">
+                            <div class="flex column">
+                                <p>4 | 5</p>
+                                <h4> 4) Je décale l'utilisation de mes appareils électriques en dehors des heures de pointe
+                                    (8h-13h/18h-20h)</h4>
+                                <p>En programmant mes machines l'après-midi ou la nuit, je les utilise en dehors des heures
+                                    de pointe. Si on le fait tous, on évite la consommation électrique d'une ville comme
+                                    Marseille.</p>
+                            </div>
+                            <img src="images/machine.jpg" alt="machine">
+                        </div>
+                        <div class="swiper-slide flex between">
+                            <div class="flex column">
+                                <p>5 | 5</p>
+                                <h4> 5) J'installe un thermostat programmable</h4>
+                                <p>Un programmateur de chauffage bien réglé permet de réduire les consommations d'énergie
+                                    jusqu'à 15% par an.</p>
+                            </div>
+                            <img src="images/thermostat.jpg" alt="thermostat">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </main>

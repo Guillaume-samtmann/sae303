@@ -292,34 +292,6 @@ const chart1 = new Chart(ctx3, {
   },
 });
 
-// // Récupérer la position verticale de l'élément contenant le graphique
-// const chartContainer = document.getElementById("chartContainer");
-// const chartContainerPosition = chartContainer.offsetTop;
-
-// // Fonction pour déclencher l'animation du graphique
-// function triggerChartAnimation() {
-//   chart2.update(); // Mettre à jour le graphique pour déclencher l'animation
-//   chart3.update(); // Mettre à jour le graphique pour déclencher l'animation
-//   chart.update(); // Mettre à jour le graphique pour déclencher l'animation
-//   chart1.update(); // Mettre à jour le graphique pour déclencher l'animation
-//   window.removeEventListener("scroll", scrollHandler); // Retirer l'écouteur d'événement après avoir déclenché l'animation
-// }
-
-// // Fonction pour gérer l'événement de défilement de la fenêtre
-// function scrollHandler() {
-//   // Récupérer la position actuelle de défilement
-//   const scrollPosition =
-//     window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-
-//   // Vérifier si la position de défilement atteint ou dépasse la position de l'élément contenant le graphique
-//   if (scrollPosition >= chartContainerPosition) {
-//     triggerChartAnimation(); // Déclencher l'animation du graphique
-//   }
-// }
-
-// // Ajouter un écouteur d'événement pour le défilement de la fenêtre
-// window.addEventListener("scroll", scrollHandler);
-
 document.addEventListener("DOMContentLoaded", function () {
   var ctx4 = document.getElementById("myChart").getContext("2d");
   var years = ["2022", "2030", "À terme"];
@@ -377,4 +349,21 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+});
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3250,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
